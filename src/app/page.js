@@ -356,7 +356,7 @@ export default function Home() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white/50 dark:bg-gray-800/50">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-100 mb-8">
-            📰 Media & <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Updates</span>
+            📰 Media and <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Updates</span>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-16">
             Insights • Events • Collaborations • Product Launches • Civic Hackathons
