@@ -8,8 +8,8 @@ const robotoMono = Roboto_Mono({
 })
 
 export const metadata = {
-  title: 'Shakktii AI',
-  description: 'Empowering Society Through AI Innovation',
+  title: 'Shakktii AI Pvt. Ltd.',
+  description: 'Unlimited Strength by AI',
 }
 
 export default function RootLayout({ children }) {
