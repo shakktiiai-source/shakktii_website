@@ -345,7 +345,7 @@ export default function Home() {
           <div className="max-w-md mx-auto">
             <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-gray-100 dark:border-gray-700">
               <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-2">Core Team:</h4>
-              <p className="text-gray-600 dark:text-gray-300">Chinmay Dharap – CTO</p>
+              <p className="text-gray-600 dark:text-gray-300">Vaishnavi Chandgude – Tech Lead</p>
               <p className="text-gray-500 dark:text-gray-400 text-sm mt-2">and others...</p>
             </div>
           </div>
