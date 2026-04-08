@@ -442,6 +442,7 @@ export function MockMingleSection() {
                       opacity: activeSlide === 0 ? 1 : 0,
                       transform: `translateX(${(0 - activeSlide) * 100}%)`,
                       zIndex: activeSlide === 0 ? 2 : 1,
+                      overflowY: 'auto', WebkitOverflowScrolling: 'touch'
                     }}>
                       <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'radial-gradient(ellipse at 40% 30%,rgba(50,92,145,0.3) 0%,transparent 70%)', pointerEvents: 'none' }} />
                       <div style={{ width: '60px', height: '60px', borderRadius: '50%', background: 'linear-gradient(135deg,#3a6491,#2a4e73)', border: '2px solid rgba(255,255,255,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '12px' }}>
@@ -470,7 +471,8 @@ export function MockMingleSection() {
                       opacity: activeSlide === 1 ? 1 : 0,
                       transform: `translateX(${(1 - activeSlide) * 100}%)`,
                       zIndex: activeSlide === 1 ? 2 : 1,
-                      display: 'flex', flexDirection: 'column' as const, gap: '10px'
+                      display: 'flex', flexDirection: 'column' as const, gap: '10px',
+                      overflowY: 'auto', WebkitOverflowScrolling: 'touch'
                     }}>
                       <div style={{ borderBottom: '1.5px solid #2d46b9', paddingBottom: '4px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                         <span style={{ fontSize: '8px', fontWeight: 700, color: '#2d46b9' }}>Psychometric Assessment</span>
@@ -505,7 +507,8 @@ export function MockMingleSection() {
                       opacity: activeSlide === 2 ? 1 : 0,
                       transform: `translateX(${(2 - activeSlide) * 100}%)`,
                       zIndex: activeSlide === 2 ? 2 : 1,
-                      display: 'flex', flexDirection: 'column' as const, justifyContent: 'center'
+                      display: 'flex', flexDirection: 'column' as const, justifyContent: 'center',
+                      overflowY: 'auto', WebkitOverflowScrolling: 'touch'
                     }}>
                       <div style={{ marginBottom: '12px' }}>
                         <div style={{ fontSize: '9px', fontWeight: 600, color: '#1e293b', marginBottom: '4px' }}>Question 3 of 15</div>
@@ -529,7 +532,8 @@ export function MockMingleSection() {
                       opacity: activeSlide === 3 ? 1 : 0,
                       transform: `translateX(${(3 - activeSlide) * 100}%)`,
                       zIndex: activeSlide === 3 ? 2 : 1,
-                      display: 'flex', flexDirection: 'column' as const
+                      display: 'flex', flexDirection: 'column' as const,
+                      overflowY: 'auto', WebkitOverflowScrolling: 'touch'
                     }}>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '12px' }}>
                         <div style={{ width: '24px', height: '24px', borderRadius: '50%', border: '2px solid #3b82f6', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '8px', color: '#3b82f6', fontWeight: 700 }}>1/10</div>
@@ -554,7 +558,8 @@ export function MockMingleSection() {
                       opacity: activeSlide === 4 ? 1 : 0,
                       transform: `translateX(${(4 - activeSlide) * 100}%)`,
                       zIndex: activeSlide === 4 ? 2 : 1,
-                      display: 'flex', flexDirection: 'column' as const, gap: '12px'
+                      display: 'flex', flexDirection: 'column' as const, gap: '12px',
+                      overflowY: 'auto', WebkitOverflowScrolling: 'touch'
                     }}>
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
                         <span style={{ fontSize: '8px', color: 'white' }}>Question 1 of 10</span>
@@ -580,7 +585,8 @@ export function MockMingleSection() {
                       opacity: activeSlide === 5 ? 1 : 0,
                       transform: `translateX(${(5 - activeSlide) * 100}%)`,
                       zIndex: activeSlide === 5 ? 2 : 1,
-                      display: 'flex', flexDirection: 'column' as const
+                      display: 'flex', flexDirection: 'column' as const,
+                      overflowY: 'auto', WebkitOverflowScrolling: 'touch'
                     }}>
                       <div style={{ fontSize: '10px', fontWeight: 600, color: '#6366f1', marginBottom: '4px' }}>टेक्निकल असेसमेंट</div>
                       <div style={{ fontSize: '8px', color: '#94a3b8', marginBottom: '12px' }}>प्रश्न 1 / 20</div>
@@ -606,7 +612,8 @@ export function MockMingleSection() {
                       opacity: activeSlide === 6 ? 1 : 0,
                       transform: `translateX(${(6 - activeSlide) * 100}%)`,
                       zIndex: activeSlide === 6 ? 2 : 1,
-                      display: 'flex', flexDirection: 'column' as const
+                      display: 'flex', flexDirection: 'column' as const,
+                      overflowY: 'auto', WebkitOverflowScrolling: 'touch'
                     }}>
                       <div style={{ fontSize: '10px', fontWeight: 600, color: '#10b981', marginBottom: '4px' }}>सिच्युएशन अ‍ॅप्टिट्यूड</div>
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>

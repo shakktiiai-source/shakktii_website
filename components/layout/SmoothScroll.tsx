@@ -23,6 +23,7 @@ export default function SmoothScroll({ children }: { children: ReactNode }) {
     });
 
     lenisRef.current = lenis;
+    (window as any).lenis = lenis;
     document.documentElement.classList.add('lenis');
 
     // requestAnimationFrame loop
@@ -38,6 +39,7 @@ export default function SmoothScroll({ children }: { children: ReactNode }) {
     // Cleanup to prevent memory leaks and double RAF loops
     return () => {
       lenis.destroy();
+      (window as any).lenis = undefined;
       cancelAnimationFrame(rafId);
       document.documentElement.classList.remove('lenis');
     };
