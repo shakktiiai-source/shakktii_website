@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
 import Lenis from 'lenis';
 
@@ -30,7 +31,7 @@ const FOOTER_LINKS: Record<string, FooterLink[]> = {
   ],
 };
 
-export default function Footer() {
+export default function Footer({ onLogoClick }: { onLogoClick?: (e: React.MouseEvent) => void } = {}) {
   const [activeModal, setActiveModal] = useState<'contact' | 'privacy' | null>(null);
   const modalWrapperRef = useRef<HTMLDivElement>(null);
   const modalContentRef = useRef<HTMLDivElement>(null);
@@ -96,11 +97,37 @@ export default function Footer() {
         <div className="max-w-[1200px] mx-auto px-6 md:px-[60px]">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
             <div>
-              <h3 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: '20px', fontWeight: 600, color: 'var(--blue-deep)', marginBottom: '10px', whiteSpace: 'nowrap' }}>
+              <h3 style={{ 
+                fontFamily: "'Cormorant Garamond',serif", 
+                fontSize: '24px', 
+                fontWeight: 600, 
+                color: 'var(--blue-deep)', 
+                marginBottom: '14px', 
+                whiteSpace: 'nowrap',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '14px',
+                lineHeight: 1
+              }}>
+                <div 
+                  onClick={(e) => { e.stopPropagation(); onLogoClick?.(e); }}
+                  style={{ cursor: onLogoClick ? 'pointer' : 'default', display: 'flex', alignItems: 'center' }}
+                  title={onLogoClick ? "Toggle Full View" : undefined}
+                >
+                  <Image
+                    src="/shakktii-logo.png"
+                    alt="Shakktii AI"
+                    width={52}
+                    height={52}
+                    quality={100}
+                    unoptimized
+                    style={{ borderRadius: '50%' }}
+                  />
+                </div>
                 Shakktii AI
               </h3>
               <p style={{ fontSize: '13px', color: 'var(--text-mid)', fontWeight: 400, lineHeight: 1.7, maxWidth: '240px' }}>
-                Intelligence infrastructure for the future of work. Helping individuals and institutions discover, develop and deploy talent.
+                Reg Addres: Shakktii AI, 1145, Sadashiv Peth, Perugate, Pune 411030
               </p>
             </div>
             {Object.entries(FOOTER_LINKS).map(([title, links]) => (
